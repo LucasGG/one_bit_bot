@@ -26,4 +26,14 @@ gem 'pry', '~> 0.12.2'
 group :development do
   # Holy rubocop!
   gem 'rubocop', :require => false
+  gem 'rubocop-performance', :require => false
+  gem 'rubocop-rspec', :require => false
+end
+
+group :test do
+  gem 'database_cleaner', '~> 1.8'
+  gem 'factory_bot', '~> 5.1'
+  gem 'faker', '~> 2.10'
+  gem 'rack-test', :require => 'rack/test'
+  gem 'rspec', '~> 3.9'
 end

@@ -8,6 +8,7 @@ require 'sinatra/activerecord'
 
 require_relative 'config/database'
 
+# Models o.O
 Dir['./app/models/*.rb'].sort.each { |file| require file }
 
 # Base class for a Web App, see Sinatra documentation.
