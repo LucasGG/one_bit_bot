@@ -1,0 +1,7 @@
+AllCops:
+  Exclude:
+    - 'bin/**/*'
+
+# Use rockets!
+Style/HashSyntax:
+  EnforcedStyle: hash_rockets
