@@ -15,5 +15,3 @@ RUN gem install bundler -v '2.1.4' && \
     bundle install -j4 --retry 3
 
 COPY . .
-
-CMD rackup config.ru -o 0.0.0.0

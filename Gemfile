@@ -20,6 +20,9 @@ gem 'rake', '~> 13.0'
 gem 'pg', '~> 1.2'
 gem 'pg_search', '~> 2.3'
 
+# pry the Universe!
+gem 'pry', '~> 0.12.2'
+
 group :development do
   # Holy rubocop!
   gem 'rubocop', :require => false
