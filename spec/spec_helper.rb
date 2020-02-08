@@ -1,11 +1,13 @@
 # frozen_string_literal: true
 
+require 'rack/test'
+require 'rspec'
+
+ENV['RACK_ENV'] = 'test'
+
 require_relative '../app.rb'
 
 Dir['./spec/support/**/*.rb'].sort.each { |file| require file }
-Dir['./app/services/**/*.rb'].sort.each { |file| require file }
-
-set :environment, :test
 
 module RSpecMixin
   include Rack::Test::Methods
@@ -15,6 +17,6 @@ module RSpecMixin
   end
 end
 
-RSpec.configure do |c|
-  c.include RSpecMixin
+RSpec.configure do |config|
+  config.include RSpecMixin
 end
