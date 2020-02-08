@@ -31,7 +31,7 @@ group :development do
 end
 
 group :test do
-  gem 'database_cleaner', '~> 1.8'
+  gem 'database_cleaner-active_record', '~> 1.8'
   gem 'factory_bot', '~> 5.1'
   gem 'faker', '~> 2.10'
   gem 'rack-test', :require => 'rack/test'
