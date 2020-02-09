@@ -5,7 +5,7 @@ require 'spec_helper'
 describe FaqModule::CreateService do
   subject(:service) { described_class }
 
-  let(:question) { Faker::Lorem.sentence }
+  let(:question) { Faker::Lorem.question }
   let(:answer) { Faker::Lorem.sentence }
   let(:hashtags) { "#{Faker::Lorem.word}, #{Faker::Lorem.word}" }
 

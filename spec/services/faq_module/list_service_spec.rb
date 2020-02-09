@@ -20,9 +20,10 @@ describe FaqModule::ListService do
 
       it 'find questions and answer in response' do
         response = service.new({}, 'list').call
-        expect(response).to faq_list.reduce(true) do |memo, faq|
+        matched = faqs.reduce(true) do |memo, faq|
           memo && match(faq.question) && match(faq.answer)
         end
+        expect(response).to matched
       end
     end
   end

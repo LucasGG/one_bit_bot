@@ -14,3 +14,6 @@ Style/HashSyntax:
 Metrics/BlockLength:
   Exclude:
     - 'spec/**/*'
+
+Style/AsciiComments:
+  Enabled: false

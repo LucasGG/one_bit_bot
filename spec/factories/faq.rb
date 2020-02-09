@@ -2,7 +2,7 @@
 
 FactoryBot.define do
   factory :faq do
-    question { Faker::Lorem.phrase }
-    answer { Faker::Lorem.phrase }
+    question { Faker::Lorem.question }
+    answer { Faker::Lorem.sentence }
   end
 end
