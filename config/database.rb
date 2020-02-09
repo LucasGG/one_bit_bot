@@ -22,7 +22,7 @@ end
 
 configure :production do
   db = URI.parse(
-    ENV.fetch('DATABASE_URL'] { 'postgres:///postgres/onebitbot_production' })
+    ENV.fetch('DATABASE_URL') { 'postgres:///postgres/onebitbot_production' }
   )
 
   set :database, {
