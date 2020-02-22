@@ -10,7 +10,6 @@ RUN mkdir -p /app
 WORKDIR /app
 
 COPY Gemfile* ./
-
 RUN gem install bundler -v '2.1.4'
 RUN bundle install -j4 --retry 3
 

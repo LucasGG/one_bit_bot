@@ -3,7 +3,6 @@
 require 'sinatra'
 
 # TODO: require 'sinatra/base'
-
 require 'sinatra/activerecord'
 
 require_relative 'config/database'

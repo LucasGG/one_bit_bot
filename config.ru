@@ -4,7 +4,8 @@
 # See #How to use Bundler with Sinatra
 
 require 'rubygems'
-require 'bundler/setup'
+require 'bundler'
+Bundler.setup(:default, ENV['RACK_ENV'])
 
 require_relative 'app'
 
