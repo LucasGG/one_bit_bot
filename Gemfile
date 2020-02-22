@@ -21,7 +21,7 @@ gem 'pg', '~> 1.2'
 gem 'pg_search', '~> 2.3'
 
 # pry the Universe!
-gem 'pry', '~> 0.12.2'
+gem 'pry', '~> 0.12'
 
 group :development do
   # Holy rubocop!
