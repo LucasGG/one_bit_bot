@@ -31,11 +31,13 @@ group :development do
 end
 
 group :test do
-  gem 'database_cleaner-active_record', '~> 1.8'
-  gem 'factory_bot', '~> 5.1'
-  gem 'faker', '~> 2.10'
-
   # Test framework.
   gem 'rack-test', :require => 'rack/test'
   gem 'rspec', '~> 3.9'
+
+  # Auxiliary test libs.
+  gem 'database_cleaner-active_record', '~> 1.8',
+      :require => 'database_cleaner/active_record'
+  gem 'factory_bot', '~> 5.1'
+  gem 'faker', '~> 2.10'
 end
