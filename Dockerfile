@@ -11,7 +11,7 @@ WORKDIR /app
 
 COPY Gemfile* ./
 
-RUN gem install bundler -v '2.1.4' && \
-    bundle install -j4 --retry 3
+RUN gem install bundler -v '2.1.4'
+RUN bundle install -j4 --retry 3
 
 COPY . .
