@@ -5,6 +5,7 @@ services:
     image: postgres:12.1
     volumes:
       - postgresql-data:/var/lib/postgresql/data
+
   app:
     tty: true
     stdin_open: true
@@ -20,6 +21,7 @@ services:
     environment:
       - LANG=C.UTF-8
       - POSTGRES_HOST=postgres
+      - RACK_ENV=development
     depends_on:
       - postgres
 
