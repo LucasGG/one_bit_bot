@@ -100,7 +100,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activerecord (~> 6.0)
+  activerecord
   database_cleaner-active_record
   factory_bot
   faker

@@ -9,7 +9,7 @@ ruby '2.7.0'
 gem 'sinatra', :github => 'sinatra/sinatra'
 
 # ORM (object-relational mapping).
-gem 'activerecord', '~> 6.0'
+gem 'activerecord'
 gem 'sinatra-activerecord'
 
 # Rake is a Make-like program implemented in Ruby.
