@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'spec_helper'
-
 describe FaqModule::CreateService do
   subject(:service) { described_class }
 

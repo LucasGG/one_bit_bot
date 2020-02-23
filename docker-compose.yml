@@ -1,24 +1,29 @@
-version: '3.7'
+version: "3.7"
 
 services:
   postgres:
     image: postgres:12.1
     volumes:
-      - postgres:/var/lib/postgresql/data
+      - postgresql-data:/var/lib/postgresql/data
+
   app:
     tty: true
     stdin_open: true
-    depends_on:
-      - postgres
     build: .
     ports:
-      - 9292:9292
+      - target: 9292
+        published: 9292
+        protocol: tcp
+        mode: host
     volumes:
       - .:/app
+      - gem-cache:/usr/local/bundle
     environment:
       - LANG=C.UTF-8
       - POSTGRES_HOST=postgres
-    command: bundle exec rackup config.ru -o 0.0.0.0
+    depends_on:
+      - postgres
 
 volumes:
-  postgres:
+  postgresql-data:
+  gem-cache:
