@@ -16,12 +16,13 @@ services:
         mode: host
     volumes:
       - .:/app
+      - gem-cache:/usr/local/bundle
     environment:
       - LANG=C.UTF-8
       - POSTGRES_HOST=postgres
-    command: ["bin/rackup", "-o", "0.0.0.0"]
     depends_on:
       - postgres
 
 volumes:
   postgresql-data:
+  gem-cache:

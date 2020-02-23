@@ -53,7 +53,7 @@ GEM
     pry (0.12.2)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
-    rack (2.2.2)
+    rack (2.2.1)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rainbow (3.0.0)
@@ -101,20 +101,21 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord (~> 6.0)
-  database_cleaner-active_record (~> 1.8)
-  factory_bot (~> 5.1)
-  faker (~> 2.10)
-  pg (~> 1.2)
-  pg_search (~> 2.3)
-  pry (~> 0.12)
+  database_cleaner-active_record
+  factory_bot
+  faker
+  pg
+  pg_search
+  pry
+  rack (= 2.2.1)
   rack-test
-  rake (~> 13.0)
-  rspec (~> 3.9)
+  rake
+  rspec
   rubocop
   rubocop-performance
   rubocop-rspec
   sinatra!
-  sinatra-activerecord (~> 2.0)
+  sinatra-activerecord
 
 RUBY VERSION
    ruby 2.7.0p0
